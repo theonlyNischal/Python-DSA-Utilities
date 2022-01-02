@@ -1,5 +1,6 @@
 Python DSA Utilities
 ===========================
+https://pypi.org/project/dsa-utilities/
 
-
-pip install py-dsa-utils==0.2
+.. code-block:: python
+  pip install dsa-utilities
