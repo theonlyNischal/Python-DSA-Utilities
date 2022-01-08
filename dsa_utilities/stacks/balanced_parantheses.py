@@ -14,6 +14,12 @@ def balanced_parantheses(parantheses: str) -> bool:
     True
     >>> balanced_parantheses("")
     True
+    >>> balanced_parantheses("()")
+    True
+    >>> balanced_parantheses("()[]{}")
+    True
+    >>> balanced_parantheses("(]")
+    False
     """
     s = stack.Stack[str]()
     bracket_parist = {
@@ -34,7 +40,7 @@ def balanced_parantheses(parantheses: str) -> bool:
 if __name__ == "__main__":
     from doctest import testmod
     testmod()
-    sample_parantheses = ["((()))", "((())", "(()))"]
+    sample_parantheses = ["((()))", "((())", "(()))", "()"]
     for parantheses in sample_parantheses:
         print(f"{parantheses} is {balanced_parantheses(parantheses)} balanced")
 
