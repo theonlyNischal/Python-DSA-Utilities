@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="dsa_utilities",
-    version="0.5",
+    version="0.7",
     description="Utilities functions for DSA",
     author="Nischal Lal Shrestha",
     author_email="aakrist666@gmail.com",
